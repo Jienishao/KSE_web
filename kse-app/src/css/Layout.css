@@ -1,0 +1,40 @@
+.layout {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 8% 1fr 8%;
+    grid-template-rows: 5% 15% auto 25%;
+    grid-template-areas:
+        'left-margin toolbar right-margin'
+        'left-margin navbar right-margin'
+        'left-margin content right-margin'
+        'left-margin sitemap right-margin';
+}
+
+.left-margin {
+    grid-area: left-margin;
+}
+
+.right-margin {
+    grid-area: right-margin;
+}
+
+.toolbar {
+    grid-area: toolbar;
+    background-color: aqua;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: yellow;
+}
+
+.content {
+    grid-area: content;
+    background: greenyellow;
+}
+
+.sitemap {
+    grid-area: sitemap;
+    background-color: pink;
+}
