@@ -57,9 +57,9 @@ const ToolBar = () => {
   return (
     <>
       <div className="media_icon">
-        <a className="logo"> <FaXTwitter className="react_icon"/></a>
-        <a className="logo"> <FaFacebook className="react_icon"/></a>
-        <a className="logo"> <IoLogoWechat className="react_icon"/></a>
+        <a className="logo"> <FaXTwitter className="react_icon" /></a>
+        <a className="logo"> <FaFacebook className="react_icon" /></a>
+        <a className="logo"> <IoLogoWechat className="react_icon" /></a>
       </div>
 
       <div></div>
