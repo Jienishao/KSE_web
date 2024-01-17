@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
-import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
 import { IoLogoWechat } from "react-icons/io5";
 
 
@@ -33,7 +33,7 @@ const ToolBar = () => {
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
-  }, []);
+  });
 
   const handelCopy = (text) => {
     // create textarea 元素
@@ -69,7 +69,7 @@ const ToolBar = () => {
           Phone:
         </div>
         <div className="p2">
-          +86 13XXXXXXXXX
+          +86 12345678900
         </div>
       </div>
       <div className="email_box" title="Click to copy" onClick={() => handelCopy("XXXXXXXX@gmail.com")}>
@@ -77,7 +77,7 @@ const ToolBar = () => {
           Email:
         </div>
         <div className="p2">
-          XXXXXXXX@gmail.com
+          123456789@gmail.com
         </div>
       </div>
 
