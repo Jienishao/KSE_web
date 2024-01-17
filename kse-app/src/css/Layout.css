@@ -28,10 +28,12 @@
     left: 8%;
     height: 5%;
     width: 84%;
+    display: grid;
     grid-template-columns: 30% 20% 20% 20% 10%;
-    background-color: rgb(255, 255, 255);
-    max-width: 4096px;
-    min-width: 1150px;
+    background-color: #f8f8ff;
+    max-width: 2000px;
+    min-width: 1300px;
+    z-index: 1000;
 }
 
 .media_icon {
@@ -54,9 +56,11 @@
 }
 
 .logo:hover {
-    transform: scale(1.03); /* image zoom in 10% */
-    background-color: rgba(065, 113, 236, 0.8);
-    box-shadow: 0 5px 15px rgba(065, 113, 236, 0.8); /* add shadow */
+    transform: scale(1.03);
+    /* image zoom in 10% */
+    background-color: rgba(226, 229, 232, 0.895);
+    box-shadow: 0 5px 15px rgb(135,206,250);
+    /* add shadow */
 }
 
 .react_icon {
@@ -68,8 +72,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-left: 2px solid rgb(50, 115, 220);
+    position: relative;
 }
+
+.phone_box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10%;
+    height: 80%; 
+    width: 3px;
+    background-color: #000;
+  }
 
 .p1 {
     font-family: Verdana;
@@ -90,9 +104,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-left: 2px solid rgb(50, 115, 220);
-    border-right: 2px solid rgb(50, 115, 220);
+    position: relative;
 }
+
+.email_box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10%;
+    height: 80%; 
+    width: 3px;
+    background-color: #000;
+  }
 
 .language_button {
     display: flex;
@@ -108,110 +131,75 @@
     font-family: Verdana;
     font-weight: 500;
     font-size: 1rem;
-    color: #696969;
+    color: white;
     align-items: center;
     justify-content: center;
-    background-color: transparent;
+    background-color: rgb(135,206,250);
     border: transparent;
-    border-radius: 30px;
+    border-radius: 10px;
     width: 80%;
-    height: 70%;
+    height: 80%;
     transition: background-color 0.1s ease;
 }
 
 .language:hover {
-    background-color: rgba(065, 113, 236, 0.8);
+    color: #000;
+    background-color: rgb(255, 255, 255);
 }
 
 .language_button.clicked button {
-    box-shadow: 0 8px 16px rgba(065, 113, 236, 0.8);
-    background-color: rgb(255, 255, 255); /* set button colour */
-  }
+    color: #000;
+    box-shadow: 0 8px 16px rgb(135,206,250);
+    background-color: rgb(255, 255, 255);
+    /* set button colour */
+}
 
-.popup{
-    position: fixed;
+.popup {
     top: 5%;
     height: 30%;
-    width: 10%;
+    width: 8%;
     position: fixed;
     border-radius: 5px;
     background-color: #fff;
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* at top layer */
+    z-index: 1;
+    /* at top layer */
 }
 
 .language_box {
     display: flex;
     font-family: Verdana;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1rem;
     align-items: center;
     justify-content: center;
     color: Black;
-    border-radius: 30px;
-    margin-top: 8.5%;
+    border-radius: 10px;
+    margin-top: 7%;
     margin-left: 10%;
     width: 80%;
-    height: 18%;
+    height: 20%;
 }
 
 .language_box:hover {
     color: white;
-    background-color: rgba(065, 113, 236, 0.8);
-}
-
-.phone_box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000;
-    border-left: 5px solid #000;
-}
-
-.p1 {
-    font-weight: 500;
-    font-size: 1rem;
-}
-
-.p2 {
-    margin-left: 3%;
-    font-weight: 400;
-    font-size: 1rem;
-}
-
-.email_box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000;
-    border-left: 5px solid #000;
-    border-right: 5px solid #000;
-}
-
-.e1 {
-    font-weight: 500;
-    font-size: 1rem;
-}
-
-.e2 {
-    margin-left: 3%;
-    font-weight: 400;
-    font-size: 1rem;
+    background-color: rgb(135,206,250);
 }
 
 .navbar {
     grid-area: navbar;
     display: grid;
-    grid-template-columns: 13% 10% 10% 10% 10% 47%;
     position: fixed;
+    grid-template-columns: 13% 10% 10% 10% 10% 47%;
     top: 5%;
     left: 8%;
     width: 84%;
     height: 11%;
     background-color: rgb(255, 255, 255);
-    max-width: 4096px;
-    min-width: 1150px;
+    max-width: 2000px;
+    min-width: 1300px;
+    z-index: 999;   
 }
 
 .brand_logo {
@@ -227,12 +215,13 @@
 .logo2 {
     height: 70%;
     margin-left: 20%;
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* initial logo */
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    /* initial logo */
 }
 
 .content {
     grid-area: content;
-    background: rgb(131, 197, 32);
+    background: greenyellow;
 }
 
 .sitemap {
