@@ -2,7 +2,7 @@ import React from "react";
 import ToolBar from "../components/ToolBar";
 import NavBar from "../components/NavBar";
 import SiteMap from "../components/SiteMap";
-import "../css/Layout.css"
+import "../css/Header.css"
 
 const MainPage = () => {
     return (
