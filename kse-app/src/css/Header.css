@@ -8,8 +8,8 @@
         'left-margin head-margin right-margin'
         'left-margin content right-margin'
         'left-margin sitemap right-margin';
-        background: rgb(143,228,230);
-        background: radial-gradient(circle, rgba(143,228,230,1) 17%, rgba(208,218,231,0.7559816162793243) 92%);
+    background: rgb(143, 228, 230);
+    background: radial-gradient(circle, rgba(143, 228, 230, 1) 17%, rgba(208, 218, 231, 0.7559816162793243) 92%);
 }
 
 .head-margin {
@@ -60,7 +60,7 @@
     transform: scale(1.03);
     /* image zoom in 10% */
     background-color: rgba(226, 229, 232, 0.895);
-    box-shadow: 0 5px 15px rgb(135,206,250);
+    box-shadow: 0 5px 15px rgb(135, 206, 250);
     /* add shadow */
 }
 
@@ -81,10 +81,10 @@
     position: absolute;
     left: 28%;
     top: 10%;
-    height: 80%; 
+    height: 80%;
     width: 3px;
     background-color: #000;
-  }
+}
 
 .p1 {
     font-family: Verdana;
@@ -114,20 +114,20 @@
     position: absolute;
     left: 23.3%;
     top: 10%;
-    height: 80%; 
+    height: 80%;
     width: 3.5px;
     background-color: #000;
-  }
+}
 
-  .contact_button {
+.contact_button {
     display: flex;
     align-items: center;
     /* logo position at centre of the toolbar */
     justify-content: flex-end;
     position: relative;
-  }
+}
 
-  .contact {
+.contact {
     margin-right: 2%;
     border: transparent;
     border-radius: 10px;
@@ -143,7 +143,7 @@
     color: white;
     width: 180%;
     height: 100%;
-    background-color: rgb(135,206,250);
+    background-color: rgb(135, 206, 250);
 }
 
 .contact_on:hover {
@@ -157,14 +157,14 @@
     color: black;
     width: 180%;
     height: 100%;
-    box-shadow: 0 8px 16px rgb(135,206,250);
+    box-shadow: 0 8px 16px rgb(135, 206, 250);
     background-color: rgb(255, 255, 255);
 }
 
 .contact_off:hover {
     color: white;
-    background-color: rgb(135,206,250);
-    box-shadow: 0 8px 16px rgb(135,206,250);
+    background-color: rgb(135, 206, 250);
+    box-shadow: 0 8px 16px rgb(135, 206, 250);
 }
 
 .contact_box {
@@ -175,7 +175,7 @@
     border-radius: 5px;
     background-color: #fff;
     border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgb(135,206,250);
+    box-shadow: 0 4px 8px rgb(135, 206, 250);
 }
 
 .language_button {
@@ -195,7 +195,7 @@
     color: white;
     align-items: center;
     justify-content: center;
-    background-color: rgb(135,206,250);
+    background-color: rgb(135, 206, 250);
     border: transparent;
     border-radius: 10px;
     width: 80%;
@@ -211,7 +211,7 @@
 
 .language_button.clicked button {
     color: #000;
-    box-shadow: 0 8px 16px rgb(135,206,250);
+    box-shadow: 0 8px 16px rgb(135, 206, 250);
     background-color: rgb(255, 255, 255);
     /* set button colour */
 }
@@ -246,14 +246,14 @@
 
 .language_box:hover {
     color: white;
-    background-color: rgb(135,206,250);
+    background-color: rgb(135, 206, 250);
 }
 
 .navbar {
     grid-area: navbar;
     display: grid;
     position: fixed;
-    grid-template-columns: 13% 10% 10% 10% 10% 47%;
+    grid-template-columns: 30% 10% 10% 10% 10% 30%;
     top: 5%;
     left: 8%;
     width: 84%;
@@ -261,7 +261,7 @@
     background-color: rgb(255, 255, 255);
     max-width: 2000px;
     min-width: 1300px;
-    z-index: 999;   
+    z-index: 999;
 }
 
 .brand_logo {
@@ -279,6 +279,120 @@
     margin-left: 20%;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
     /* initial logo */
+}
+
+.fun_pop1 {
+    display: none;
+    top: 12%;
+    right: 10%;
+    height: 30%;
+    width: 80%;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.function1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana;
+    font-weight: 700;
+    font-size: 1rem;
+    color: Black;
+    cursor: pointer;
+    position: relative;
+}
+
+.function1:hover:before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    height: 150%;
+    width: 3%;
+    background-color: rgb(135, 206, 250);;
+    transform: rotate(90deg);
+}
+
+.function1:hover .fun_pop1 {
+    display: block;
+    
+}
+
+.fun_pop2 {
+    display: none;
+    top: 12%;
+    right: 10%;
+    height: 30%;
+    width: 80%;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.function2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana;
+    font-weight: 700;
+    font-size: 1rem;
+    color: Black;
+    cursor: pointer;
+    position: relative;
+}
+
+.function2:hover:before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    height: 150%;
+    width: 3%;
+    background-color: rgb(135, 206, 250);;
+    transform: rotate(90deg);
+}
+
+.function2:hover .fun_pop2 {
+    display: block;
+    
+}
+
+.fun_pop3 {
+    display: none;
+    top: 12%;
+    right: 10%;
+    height: 30%;
+    width: 80%;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.function3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana;
+    font-weight: 700;
+    font-size: 1rem;
+    color: Black;
+    cursor: pointer;
+    position: relative;
+}
+
+.function3:hover:before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    height: 150%;
+    width: 3%;
+    background-color: rgb(135, 206, 250);;
+    transform: rotate(90deg);
+}
+
+.function3:hover .fun_pop3 {
+    display: block;
+    
 }
 
 .content {
