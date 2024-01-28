@@ -2,7 +2,9 @@ import React from "react";
 import ToolBar from "../components/ToolBar";
 import NavBar from "../components/NavBar";
 import SiteMap from "../components/SiteMap";
-import "../css/Header.css"
+import "../css/MainPage.css"
+import SlideImages from "../assets/SlideImages";
+import Slider from "../components/Slider";
 
 const MainPage = () => {
     return (
@@ -14,7 +16,11 @@ const MainPage = () => {
                 <NavBar />
             </div>
             <div className="content">
-                <p>Main</p>
+                <Slider>
+                    {SlideImages.map((SlideImages, index) => {
+                        return <img key={index} src={SlideImages.imgURL} alt={SlideImages.imgAlt} />;
+                    })}
+                </Slider>
             </div>
             <div className="sitemap">
                 <SiteMap />

@@ -1,12 +1,10 @@
 import React from "react";
 import { PiWindowsLogoBold } from "react-icons/pi";
+import "../css/NavBar.css"
 
 const NavBar = () => {
     return (
         <>
-            <div>
-
-            </div>
             <div className="brand_logo">
                 <a className="logo2"> <PiWindowsLogoBold className="react_icon" /></a>
             </div>

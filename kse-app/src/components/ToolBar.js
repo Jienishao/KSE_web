@@ -3,8 +3,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoWechat } from "react-icons/io5";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-
-
+import "../css/ToolBar.css"
 
 const ToolBar = () => {
 
@@ -79,8 +78,8 @@ const ToolBar = () => {
       <div></div>
 
       <div className={`contact_button ${buttonClicked ? "clicked" : ""}`}>
-        <button className="contact" onClick={isContactOpen ? closeContact : openContact}> 
-        {contactClicked ? <MdKeyboardArrowRight className="contact_off"/> : <MdKeyboardArrowLeft className="contact_on"/> }
+        <button className="contact" onClick={isContactOpen ? closeContact : openContact}>
+          {contactClicked ? <MdKeyboardArrowRight className="contact_off" /> : <MdKeyboardArrowLeft className="contact_on" />}
         </button>
 
         {isContactOpen && (
