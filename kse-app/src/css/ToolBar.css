@@ -117,12 +117,13 @@
     color: white;
     width: 180%;
     height: 100%;
-    background-color: rgb(135, 206, 250);
+    background-color: #007aff;
 }
 
 .contact_on:hover {
     color: #000;
     background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 4px rgb(135, 206, 250);
 }
 
 .contact_off {
@@ -131,14 +132,14 @@
     color: black;
     width: 180%;
     height: 100%;
-    box-shadow: 0 8px 16px rgb(135, 206, 250);
+    box-shadow: 0 4px 4px rgb(135, 206, 250);
     background-color: rgb(255, 255, 255);
 }
 
 .contact_off:hover {
     color: white;
-    background-color: rgb(135, 206, 250);
-    box-shadow: 0 8px 16px rgb(135, 206, 250);
+    background-color: #007aff;
+    box-shadow: 0 4px 4px rgb(135, 206, 250);
 }
 
 .contact_box {
@@ -149,7 +150,7 @@
     border-radius: 5px;
     background-color: #fff;
     border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgb(135, 206, 250);
+    box-shadow: 0 4px 4px rgb(135, 206, 250);
 }
 
 .language_button {
@@ -158,18 +159,18 @@
     /* logo position at centre of the toolbar */
     justify-content: center;
     position: relative;
-    /* relative to add shadow */
+    /* relative to add shadow  #007aff*/
 }
 
 .language {
     display: flex;
     font-family: Verdana;
-    font-weight: 500;
+    font-weight: 550;
     font-size: 1rem;
     color: white;
     align-items: center;
     justify-content: center;
-    background-color: rgb(135, 206, 250);
+    background-color: #007aff;
     border: transparent;
     border-radius: 10px;
     width: 80%;
@@ -178,14 +179,15 @@
 }
 
 .language:hover {
-    color: #000;
+    color: #007aff;
     font-weight: 550;
-    background-color: rgb(255, 255, 255);
+    background-color: White;
+    box-shadow: 0 4px 4px rgb(135, 206, 250);
 }
 
 .language_button.clicked button {
     color: #000;
-    box-shadow: 0 8px 16px rgb(135, 206, 250);
+    box-shadow: 0 4px 4px rgb(135, 206, 250);
     background-color: rgb(255, 255, 255);
     /* set button colour */
 }

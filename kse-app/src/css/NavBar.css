@@ -31,7 +31,7 @@
 }
 
 .fun_pop1 {
-    display: none;
+
     top: 12%;
     right: 10%;
     height: 30%;
@@ -39,6 +39,12 @@
     position: fixed;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: visibility 0s, opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .function1 {
@@ -60,13 +66,13 @@
     height: 150%;
     width: 3%;
     background-color: rgb(135, 206, 250);
-    ;
     transform: rotate(90deg);
 }
 
 .function1:hover .fun_pop1 {
-    display: block;
-
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .fun_pop2 {
