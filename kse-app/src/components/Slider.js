@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../css/Slider.css"
 
 function Slider({ children }) {
+    const [canClick, setCanClick] = useState(true);
     const [activeIndex, setActiveIndex] = useState(0);
     const [slideDone, setSlideDone] = useState(true);
     const [timeID, setTimeID] = useState(null);
@@ -19,23 +20,36 @@ function Slider({ children }) {
     }, [slideDone]);
 
     const slideNext = () => {
-        setActiveIndex((val) => {
-            if (val >= children.length - 1) {
-                return 0;
-            } else {
-                return val + 1;
-            }
-        });
+        if (canClick) {
+            setCanClick(false);
+            setActiveIndex((val) => {
+                if (val >= children.length - 1) {
+                    return 0;
+                } else {
+                    return val + 1;
+                }
+            });
+            setTimeout(() => {
+                setCanClick(true); 
+            },1000);
+        }
+        
     };
 
     const slidePrev = () => {
-        setActiveIndex((val) => {
-            if (val <= 0) {
-                return children.length - 1;
-            } else {
-                return val - 1;
-            }
-        });
+        if (canClick) {
+            setCanClick(false);
+            setActiveIndex((val) => {
+                if (val <= 0) {
+                    return children.length - 1;
+                } else {
+                    return val - 1;
+                }
+            });
+            setTimeout(() => {
+                setCanClick(true); 
+            },1000);
+        }
     };
 
     const AutoPlayStop = () => {

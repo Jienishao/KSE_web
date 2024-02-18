@@ -8,7 +8,7 @@ import Slider from "../components/Slider";
 
 const MainPage = () => {
     return (
-        <div className="layout">
+        <div className="mainpage">
             <div className="toolbar">
                 <ToolBar />
             </div>

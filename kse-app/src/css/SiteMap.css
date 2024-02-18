@@ -1,0 +1,10 @@
+.sitemap {
+    position: relative;
+    top: 13%;
+    left: 9%;
+    width: 82%;
+    height: 15vh;
+    background-color: rgb(214, 196, 199);
+    max-width: 2000px;
+    min-width: 1300px;
+}
