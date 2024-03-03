@@ -1,10 +1,24 @@
-.sitemap {
-    position: relative;
-    top: 13%;
+.site {
+    position: absolute;
+    top: 109%;
     left: 9%;
     width: 82%;
-    height: 15vh;
+    height: 25vh;
     background-color: rgb(214, 196, 199);
     max-width: 2000px;
     min-width: 1300px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
 }
