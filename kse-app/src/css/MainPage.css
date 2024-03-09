@@ -13,3 +13,32 @@
     max-width: 2000px;
     min-width: 1300px;
 }
+
+.title_1 {
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+    padding: 20px 0;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cards {
+    display: flex;
+    background: #fff;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.card {
+    flex: 1;
+    margin-right: 80px;
+    text-align: center;
+    width: 80px;
+    height: 350px;
+    border: 1px solid gray;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
