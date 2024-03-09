@@ -4,7 +4,7 @@
     height: 5%;
     width: 84%;
     display: grid;
-    grid-template-columns: 30% 20% 40% 10%;
+    grid-template-columns: 30% 24% 25% 1% 10% 10%;
     background-color: #f8f8ff;
     max-width: 2000px;
     min-width: 1300px;
@@ -43,14 +43,41 @@
     width: 100%;
 }
 
-.phone_box {
+.contact {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+.phone_box {
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
     justify-content: center;
-    position: relative;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .phone_box::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    height: 0%;
+    width: 0%;
+    background-color: rgb(135, 206, 250);
+    transform: rotate(90deg);
+    opacity: 0;
+    transition: width 0.5s ease-out, height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.phone_box:hover:before {
+    height: 300%;
+    width: 0.3%;
+    opacity: 1;
+}
+
+/* .phone_box::before {
     content: "";
     position: absolute;
     left: 28%;
@@ -58,32 +85,54 @@
     height: 80%;
     width: 3px;
     background-color: #000;
+} */
+
+.p1, .p2 {
+    display: inline-block;
+    font-family: Verdana;
+    font-size: 13px;
+    color: #555555;
 }
 
 .p1 {
-    font-family: Verdana;
     font-weight: 1000;
-    font-size: 13px;
-    color: #555555;
 }
 
 .p2 {
-    font-family: Verdana;
     margin-left: 3%;
     font-weight: 300;
-    font-size: 13px;
-    color: #555555;
 }
 
 .email_box {
+    width: 49%;
+    height: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column; 
+    align-items: center; 
     justify-content: center;
-    position: relative;
-    margin-left: 6%;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .email_box::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    height: 0%;
+    width: 0%;
+    background-color: rgb(135, 206, 250);
+    transform: rotate(90deg);
+    opacity: 0;
+    transition: width 0.5s ease-out, height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.email_box:hover:before {
+    height: 300%;
+    width: 0.3%;
+    opacity: 1;
+}
+
+/* .email_box::before {
     content: "";
     position: absolute;
     left: 23.3%;
@@ -91,17 +140,16 @@
     height: 80%;
     width: 3.5px;
     background-color: #000;
-}
+} */
 
-.contact_button {
+/* .contact_button {
     display: flex;
     align-items: center;
-    /* logo position at centre of the toolbar */
     justify-content: flex-end;
     position: relative;
-}
+} */
 
-.contact {
+/* .contact {
     margin-right: 2%;
     border: transparent;
     border-radius: 10px;
@@ -109,24 +157,24 @@
     height: 80%;
     background-color: transparent;
     transition: background-color 0.1s ease;
-}
+} */
 
-.contact_on {
+/* .contact_on {
     border: transparent;
     border-radius: 10px;
     color: white;
     width: 180%;
     height: 100%;
     background-color: #007aff;
-}
-
+} */
+/* 
 .contact_on:hover {
     color: #000;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 4px 4px rgb(135, 206, 250);
-}
+} */
 
-.contact_off {
+/* .contact_off {
     border: transparent;
     border-radius: 10px;
     color: black;
@@ -134,15 +182,15 @@
     height: 100%;
     box-shadow: 0 4px 4px rgb(135, 206, 250);
     background-color: rgb(255, 255, 255);
-}
+} */
 
-.contact_off:hover {
+/* .contact_off:hover {
     color: white;
     background-color: #007aff;
     box-shadow: 0 4px 4px rgb(135, 206, 250);
-}
+} */
 
-.contact_box {
+/* .contact_box {
     left: 50%;
     height: 4.5%;
     width: 30%;
@@ -151,7 +199,7 @@
     background-color: #fff;
     border: 1px solid #ccc;
     box-shadow: 0 4px 4px rgb(135, 206, 250);
-}
+} */
 
 .language_button {
     display: flex;
@@ -223,4 +271,35 @@
 .language_box:hover {
     color: white;
     background-color: rgb(135, 206, 250);
+}
+
+.request{
+    display: flex;
+    align-items: center;
+    /* logo position at centre of the toolbar */
+    justify-content: center;
+    position: relative;
+}
+
+.request_button {
+    display: flex;
+    font-family: Verdana;
+    font-weight: 550;
+    font-size: 1rem;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    background-color: #007aff;
+    border: transparent;
+    border-radius: 10px;
+    width: 80%;
+    height: 80%;
+    transition: background-color 0.1s ease;
+}
+
+.request_button:hover {
+    color: #007aff;
+    font-weight: 550;
+    background-color: White;
+    box-shadow: 0 4px 4px rgb(135, 206, 250);
 }

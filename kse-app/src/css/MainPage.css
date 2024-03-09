@@ -1,7 +1,7 @@
 .mainpage {
     width: 100%;
     height: 100vh;
-    background: radial-gradient(circle, rgba(143, 228, 230, 1) 17%, rgba(208, 218, 231, 0.7559816162793243) 92%);
+    background: #f8f9fa;
 }
 
 .content {

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { TiChevronLeft, TiChevronRight } from "react-icons/ti";
 import "../css/Slider.css"
 
 function Slider({ children }) {
@@ -96,7 +97,7 @@ function Slider({ children }) {
                                 e.preventDefault();
                                 setActiveIndex(index);
                             }}
-                        ></button>
+                        ><TiChevronRight className="icon"/></button>
                     );
                 })}
             </div>
@@ -108,7 +109,7 @@ function Slider({ children }) {
                     slideNext();
                 }}
             >
-                {">"}
+                <TiChevronRight />
             </button>
             <button
                 className="slider__btn-prev"
@@ -117,7 +118,7 @@ function Slider({ children }) {
                     slidePrev();
                 }}
             >
-                {"<"}
+                <TiChevronLeft />
             </button>
         </div>
     );
