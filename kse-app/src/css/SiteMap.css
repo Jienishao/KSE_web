@@ -1,10 +1,9 @@
 .site {
     position: absolute;
-    top: 109%;
     left: 9%;
     width: 82%;
     height: 25vh;
-    background-color: rgb(214, 196, 199);
+    background-color: gainsboro;
     max-width: 2000px;
     min-width: 1300px;
 }
