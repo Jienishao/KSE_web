@@ -1,9 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { IoLogoWechat } from "react-icons/io5";
-import { FaLinkedin } from "react-icons/fa";
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+import { MdPhone, MdEmail } from "react-icons/md";
+/* import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md"; */
 import "../css/ToolBar.css"
+import { Link, useLocation } from "react-router-dom";
 
 const ToolBar = () => {
 
@@ -12,6 +13,8 @@ const ToolBar = () => {
   const [isContactOpen, setContactOpen] = useState(false);
   const [contactClicked, setContactClicked] = useState(false);
   const popupRef = useRef(null);
+  const location = useLocation();
+  const isRequestPage = location.pathname === '/Request';
 
   const openPopup = (event) => {
     event.stopPropagation();
@@ -103,7 +106,7 @@ const ToolBar = () => {
       <div className="contact">
         <div className="phone_box" title="Click to copy" onClick={() => handelCopy("+86 13XXXXXXXXX")}>
           <div className="p1">
-            Phone:
+            <MdPhone />
           </div>
           <div className="p2">
             +86 12345678900
@@ -111,7 +114,7 @@ const ToolBar = () => {
         </div>
         <div className="email_box" title="Click to copy" onClick={() => handelCopy("XXXXXXXX@gmail.com")}>
           <div className="p1">
-            Email:
+            <MdEmail />
           </div>
           <div className="p2">
             123456789@gmail.com
@@ -144,7 +147,9 @@ const ToolBar = () => {
       </div>
 
       <div className="request">
-        <button className="request_button">Request</button>
+        <Link to="/Request" className='req_link'>
+          <button className={`request_button ${isRequestPage ? 'request_button_selected' : ''}`}>Request</button>
+        </Link>
       </div>
     </>
   )

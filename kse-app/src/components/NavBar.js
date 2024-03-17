@@ -1,13 +1,49 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { PiWindowsLogoBold } from "react-icons/pi";
 import { MdSearch } from "react-icons/md";
 import "../css/NavBar.css"
+import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
+
+    const [expanded, setExpanded] = useState(false);
+    const [buttonClicked, setButtonClicked] = useState(false);
+    const popupRef = useRef(null);
+
+    const toggleExpand = () => {
+        setExpanded(!expanded);
+    };
+
+    const expendSearch = (event) => {
+        event.stopPropagation();
+        setExpanded(true);
+        setButtonClicked(true);
+    };
+    
+    const closeSearch = () => {
+        setExpanded(false);
+        setButtonClicked(false);
+    };
+
+    const handleClickOutside = (event) => {
+        if (popupRef.current && !popupRef.current.contains(event.target)) {
+            closeSearch();
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener("click", handleClickOutside);
+        return () => {
+            document.removeEventListener("click", handleClickOutside);
+        };
+    }, []);
+
     return (
         <>
             <div className="brand_logo">
+            <Link to="/main" className="logo_link">
                 <a className="logo2"> <PiWindowsLogoBold className="react_icon" /></a>
+            </Link>
             </div>
             <div className="function1">
                 Function 1
@@ -84,9 +120,13 @@ const NavBar = () => {
 
             <div></div>
 
-            <div className="search">
-                <div className="search_bar">
-                    <MdSearch className="s_icon"/>
+            <div className="search" ref={popupRef}>
+                <div className={`search_bar ${expanded ? 'expanded' : ''}`} onClick={toggleExpand}>
+                    <MdSearch className="s_icon" />
+                    <input type="text"
+                        id="searchInput"
+                        className="search-input"
+                        placeholder="Search" />
                 </div>
             </div>
         </>
