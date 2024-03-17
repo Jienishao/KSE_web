@@ -3,8 +3,6 @@ import ToolBar from "../components/ToolBar";
 import NavBar from "../components/NavBar";
 import SiteMap from "../components/SiteMap";
 import "../css/MainPage.css"
-import SlideImages from "../assets/SlideImages";
-import Slider from "../components/Slider";
 
 const Request = () => {
     return (

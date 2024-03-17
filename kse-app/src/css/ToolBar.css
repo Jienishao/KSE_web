@@ -9,6 +9,7 @@
     max-width: 2000px;
     min-width: 1300px;
     z-index: 1000;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .media_icon {
@@ -48,12 +49,13 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .phone_box {
     width: 49%;
     height: 100%;
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     cursor: pointer;
     overflow: hidden;
@@ -87,9 +89,9 @@
     background-color: #000;
 } */
 
-.p1, .p2 {
+.p1,
+.p2 {
     display: inline-block;
-    font-family: Verdana;
     font-size: 13px;
     color: #555555;
 }
@@ -107,8 +109,8 @@
     width: 49%;
     height: 100%;
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     cursor: pointer;
     overflow: hidden;
@@ -212,7 +214,6 @@
 
 .language {
     display: flex;
-    font-family: Verdana;
     font-weight: 550;
     font-size: 1rem;
     color: white;
@@ -255,7 +256,6 @@
 
 .language_box {
     display: flex;
-    font-family: Verdana;
     font-weight: 700;
     font-size: 1rem;
     align-items: center;
@@ -273,7 +273,7 @@
     background-color: rgb(135, 206, 250);
 }
 
-.request{
+.request {
     display: flex;
     align-items: center;
     /* logo position at centre of the toolbar */
@@ -283,7 +283,6 @@
 
 .request_button {
     display: flex;
-    font-family: Verdana;
     font-weight: 550;
     font-size: 1rem;
     color: white;
