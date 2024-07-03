@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { PiWindowsLogoBold } from "react-icons/pi";
 import { MdSearch } from "react-icons/md";
 import "../css/NavBar.css"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const NavBar = () => {
 
@@ -37,6 +37,12 @@ const NavBar = () => {
             document.removeEventListener("click", handleClickOutside);
         };
     }, []);
+
+    const navigate = useNavigate();
+
+    const handleClickFun3 = () => {
+    navigate('/fun3');
+    };
 
     return (
         <>
@@ -87,7 +93,7 @@ const NavBar = () => {
                     <div className="button-container">
                         <div className="title"> Function 3 Title</div>
                         <div className="column">
-                            <button>Button 1</button>
+                            <button onClick={handleClickFun3}>Button 1</button>
                             <button>Button 2</button>
                             <button>Button 3</button>
                         </div>
