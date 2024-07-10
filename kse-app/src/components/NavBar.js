@@ -19,7 +19,7 @@ const NavBar = () => {
         setExpanded(true);
         setButtonClicked(true);
     };
-    
+
     const closeSearch = () => {
         setExpanded(false);
         setButtonClicked(false);
@@ -41,15 +41,15 @@ const NavBar = () => {
     const navigate = useNavigate();
 
     const handleClickFun3 = () => {
-    navigate('/fun3');
+        navigate('/fun3');
     };
 
     return (
         <>
             <div className="brand_logo">
-            <Link to="/main" className="logo_link">
-                <a className="logo2"> <PiWindowsLogoBold className="react_icon" /></a>
-            </Link>
+                <Link to="/" className="logo_link">
+                    <a className="logo2"> <PiWindowsLogoBold className="react_icon" /></a>
+                </Link>
             </div>
             <div className="function1">
                 Function 1
@@ -57,7 +57,9 @@ const NavBar = () => {
                     <div className="button-container">
                         <div className="title"> Function 1 Title</div>
                         <div className="column">
-                            <button>Button 1</button>
+                            <Link to="/function1">
+                                <button>Button 1</button>
+                            </Link>
                             <button>Button 2</button>
                             <button>Button 3</button>
                         </div>

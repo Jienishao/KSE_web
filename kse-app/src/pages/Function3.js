@@ -2,9 +2,7 @@ import React, { useEffect } from "react";
 import ToolBar from "../components/ToolBar";
 import NavBar from "../components/NavBar";
 import SiteMap from "../components/SiteMap";
-import "../css/Function3.css"
-import SlideImages from "../assets/SlideImages";
-import Slider from "../components/Slider";
+import "../css/MainPage.css"
 
 const Function3 = () => {
     useEffect(() => {
@@ -34,7 +32,7 @@ const Function3 = () => {
             { id: 'dynamicImage4', src: require('../image/test4.jpg') },
             { id: 'dynamicImage5', src: require('../image/test5.jpg') },
         ];
-    
+
         imageMappings.forEach(mapping => {
             const imgElement = document.getElementById(mapping.id);
             if (imgElement) {
@@ -79,7 +77,7 @@ const Function3 = () => {
     }
 
     return (
-        <div className="Function3" id="title1">
+        <div className="mainpage" id="title1">
             <div className="toolbar">
                 <ToolBar />
             </div>
@@ -94,13 +92,13 @@ const Function3 = () => {
 
             <div className="guide_box">
                 <button className="jumpButton" data-target="title2">Jump to Title 1</button>
-                <button className="jumpButton2"/>
+                <button className="jumpButton2" />
                 <button className="jumpButton" data-target="title3">Jump to Title 2</button>
-                <button className="jumpButton2"/>
+                <button className="jumpButton2" />
                 <button className="jumpButton" data-target="title4">Jump to Title 3</button>
-                <button className="jumpButton2"/>
+                <button className="jumpButton2" />
                 <button className="jumpButton" data-target="title5">Jump to Title 4</button>
-                <button className="jumpButton2"/>
+                <button className="jumpButton2" />
                 <button className="jumpButton" data-target="title6">Jump to Title 5</button>
             </div>
 
@@ -384,9 +382,9 @@ const Function3 = () => {
                 <span>Top</span>
             </div>
 
-            {/*<div className="sitemap">
+            <div className="sitemap">
                 <SiteMap />
-            </div>*/}
+            </div>
         </div >
     )
 }

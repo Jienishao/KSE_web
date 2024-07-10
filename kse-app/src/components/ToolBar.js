@@ -147,9 +147,7 @@ const ToolBar = () => {
       </div>
 
       <div className="request">
-        <Link to="/Request" className='req_link'>
-          <button className={`request_button ${isRequestPage ? 'request_button_selected' : ''}`}>Request</button>
-        </Link>
+        <button className={`request_button ${isRequestPage ? 'request_button_selected' : ''}`}>Request</button>
       </div>
     </>
   )
