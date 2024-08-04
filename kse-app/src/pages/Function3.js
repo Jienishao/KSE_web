@@ -27,6 +27,7 @@ const Function3 = () => {
 
     useEffect(() => {
         const imageMappings = [
+            { id: 'dynamicImage0', src: require('../image/overview_str.png') },
             { id: 'dynamicImage1', src: require('../image/kvc200.png') },
             { id: 'dynamicImage2', src: require('../image/kvc300.png') },
             { id: 'dynamicImage3', src: require('../image/kvc400.png') },
@@ -88,21 +89,27 @@ const Function3 = () => {
                 <NavBar />
             </div>
 
-            <div className="front_base"></div>
-            <div className="base_t" />
-            <div className="main_title">PRODUCT RANGE</div>
-            <div className="detail1">Any details that need to be set on this page ...</div>
+            <div className="front_base">
+            <img id="dynamicImage0" src="" alt="Image" style={{ maxWidth: '100%', height: 'auto' }}/>
+            </div>
+            <div className="main_title">CERAMIC BALL VALVES - KVC series</div>
+            <div className="detail1">KVC series ceramic-lined ball valve, for high corrosion resistance, high wear, high temperature and medium pressure applications, fits in granule medium of high hardness or Medium with erosive soft granule. It is also the only valve suitable for this type of medium.
+Meanwhile, this valve also work in abrasive slurries, or in case of highly corrosive applications.</div>
 
             <div className="guide_box">
-                <button className="jumpButton" data-target="title2">Jump to Title 1</button>
+                <button className="jumpButton" data-target="title2">KVC200</button>
                 <button className="jumpButton2" />
-                <button className="jumpButton" data-target="title3">Jump to Title 2</button>
+                <button className="jumpButton" data-target="title3">KVC300</button>
                 <button className="jumpButton2" />
-                <button className="jumpButton" data-target="title4">Jump to Title 3</button>
+                <button className="jumpButton" data-target="title4">KVC400</button>
                 <button className="jumpButton2" />
-                <button className="jumpButton" data-target="title5">Jump to Title 4</button>
+                <button className="jumpButton" data-target="title5">KVC500</button>
                 <button className="jumpButton2" />
-                <button className="jumpButton" data-target="title6">Jump to Title 5</button>
+                <button className="jumpButton" data-target="title6">KVC600</button>
+                <button className="jumpButton2" />
+                <button className="jumpButton" data-target="title7">KVC700</button>
+                <button className="jumpButton2" />
+                <button className="jumpButton" data-target="title8">KVC800</button>
             </div>
 
             <div id="title2" className="content">
@@ -140,7 +147,7 @@ const Function3 = () => {
                         </table>
                     </div>
                     <div className="right_side">
-                        <img id="dynamicImage1" src="" alt="Image" />
+                        <img id="dynamicImage1" src="" alt="Image" style={{ width: '100%', height: '100%', objectFit: 'contain' }}/>
                     </div>
                 </div>
             </div>
@@ -183,7 +190,7 @@ const Function3 = () => {
                         </table>
                     </div>
                     <div className="right_side">
-                        <img id="dynamicImage2" src="" alt="Image" />
+                        <img id="dynamicImage2" src="" alt="Image" style={{ width: '100%', height: '100%', objectFit: 'contain' }}/>
                     </div>
                 </div>
             </div>
@@ -227,7 +234,7 @@ const Function3 = () => {
                         </table>
                     </div>
                     <div className="right_side">
-                        <img id="dynamicImage3" src="" alt="Image" />
+                        <img id="dynamicImage3" src="" alt="Image" style={{ width: '100%', height: '100%', objectFit: 'contain' }}/>
                     </div>
                 </div>
             </div>
@@ -268,7 +275,7 @@ const Function3 = () => {
                         </table>
                     </div>
                     <div className="right_side">
-                        <img id="dynamicImage4" src="" alt="Image" />
+                        <img id="dynamicImage4" src="" alt="Image" style={{ width: '100%', height: '100%', objectFit: 'contain' }}/>
                     </div>
                 </div>
             </div>
@@ -308,7 +315,7 @@ const Function3 = () => {
                         </table>
                     </div>
                     <div className="right_side">
-                        <img id="dynamicImage5" src="" alt="Image" />
+                        <img id="dynamicImage5" src="" alt="Image" style={{ width: '100%', height: '100%', objectFit: 'contain' }}/>
                     </div>
                 </div>
             </div>
@@ -349,7 +356,7 @@ const Function3 = () => {
                         </table>
                     </div>
                     <div className="right_side">
-                        <img id="dynamicImage6" src="" alt="Image" />
+                        <img id="dynamicImage6" src="" alt="Image" style={{ width: '100%', height: '100%', objectFit: 'contain' }}/>
                     </div>
                 </div>
             </div>
@@ -388,7 +395,7 @@ const Function3 = () => {
                         </table>
                     </div>
                     <div className="right_side">
-                        <img id="dynamicImage7" src="" alt="Image" />
+                        <img id="dynamicImage7" src="" alt="Image" style={{ width: '100%', height: '100%', objectFit: 'contain' }}/>
                     </div>
                 </div>
             </div>

@@ -39,6 +39,28 @@
     /* add shadow */
 }
 
+.logo:hover .logo_wechat {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.logo_wechat {
+    top: 130%;
+    left: -200%;
+    height: 600%;
+    width: 500%;
+    border-radius: 10%;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 3.5);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: visibility 0s, opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
 .react_icon {
     height: 100%;
     width: 100%;

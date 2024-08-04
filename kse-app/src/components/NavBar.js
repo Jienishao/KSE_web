@@ -90,12 +90,12 @@ const NavBar = () => {
                 </div>
             </div>
             <div className="function3">
-                Function 3
+                PRODUCT
                 <div className="fun_pop3">
                     <div className="button-container">
-                        <div className="title"> Function 3 Title</div>
+                        <div className="title"> Different product material</div>
                         <div className="column">
-                            <button onClick={handleClickFun3}>Button 1</button>
+                            <button onClick={handleClickFun3}>Ceramic valves</button>
                             <button>Button 2</button>
                             <button>Button 3</button>
                         </div>
