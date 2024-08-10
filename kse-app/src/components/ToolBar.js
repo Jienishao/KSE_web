@@ -2,9 +2,12 @@ import React, { useState, useRef, useEffect } from "react";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { IoLogoWechat } from "react-icons/io5";
 import { MdPhone, MdEmail } from "react-icons/md";
+import { IoLogoWhatsapp } from "react-icons/io";
 /* import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md"; */
 import "../css/ToolBar.css"
 import { Link, useLocation } from "react-router-dom";
+import whatsappQR from '../image/whatsapp.png';
+import wechatQR from '../image/wechat.png';
 
 const ToolBar = () => {
 
@@ -68,44 +71,24 @@ const ToolBar = () => {
   return (
     <>
       <div className="media_icon">
-        <a className="logo"> <FaLinkedin className="react_icon" /></a>
-        <a className="logo"> <FaFacebook className="react_icon" /></a>
+        <a href="https://www.linkedin.com" className="logo"> <FaLinkedin className="react_icon" /></a>
+        <a href="https://www.facebook.com" className="logo"> <FaFacebook className="react_icon" /></a>
         <div className="logo">
           <IoLogoWechat className="react_icon" />
-          <div className="logo_wechat"></div>
+          <div className="logo_wechat">
+          <img className="img_wechat" src={wechatQR} alt="Wechat Logo" />
+          </div>
+        </div>
+        <div className="logo">
+          <IoLogoWhatsapp className="react_icon" />
+          <div className="logo_whatsapp">
+          <img className="img_whatsapp" src={whatsappQR} alt="WhatsApp Logo" />
+          </div>
         </div>
       </div>
 
 
       <div></div>
-
-      {/* <div className={`contact_button ${buttonClicked ? "clicked" : ""}`}>
-        <button className="contact" onClick={isContactOpen ? closeContact : openContact}>
-          {contactClicked ? <MdKeyboardArrowRight className="contact_off" /> : <MdKeyboardArrowLeft className="contact_on" />}
-        </button>
-
-        {isContactOpen && (
-          <div className="contact_box" ref={popupRef}>
-            <span className="close" onClick={closeContact}></span>
-            <div className="phone_box" title="Click to copy" onClick={() => handelCopy("+86 13XXXXXXXXX")}>
-              <div className="p1">
-                Phone:
-              </div>
-              <div className="p2">
-                +86 12345678900
-              </div>
-            </div>
-            <div className="email_box" title="Click to copy" onClick={() => handelCopy("XXXXXXXX@gmail.com")}>
-              <div className="p1">
-                Email:
-              </div>
-              <div className="p2">
-                123456789@gmail.com
-              </div>
-            </div>
-          </div>
-        )}
-      </div> */}
 
       <div className="contact">
         <div className="phone_box" title="Click to copy" onClick={() => handelCopy("+86 13XXXXXXXXX")}>

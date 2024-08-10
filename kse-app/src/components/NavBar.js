@@ -3,6 +3,7 @@ import { PiWindowsLogoBold } from "react-icons/pi";
 import { MdSearch } from "react-icons/md";
 import "../css/NavBar.css"
 import { Link, useNavigate } from "react-router-dom";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const NavBar = () => {
 
@@ -55,15 +56,27 @@ const NavBar = () => {
                 Services
                 <div className="fun_pop1">
                     <div className="button-container">
-                        <div className="title"> Function 1 Title</div>
+                        <div  className="title">
+                        <div> Services</div>
+                        <FaLongArrowAltRight className="arrow"/>
+                        </div>
+
                         <div className="column">
+                            <div className="subtitle">Group 1</div>
                             <Link to="/function1">
-                                <button>Button 1</button>
+                                <button>Electrical Actuators</button>
                             </Link>
-                            <button>Button 2</button>
+                            <button onClick={handleClickFun3}>Ceramic valves</button>
                             <button>Button 3</button>
                         </div>
                         <div className="column">
+                            <div className="subtitle">Group 2</div>
+                            <button>Button 4</button>
+                            <button>Button 5</button>
+                            <button>Button 6</button>
+                        </div>
+                        <div className="column">
+                            <div className="subtitle">Group 3</div>
                             <button>Button 4</button>
                             <button>Button 5</button>
                             <button>Button 6</button>
@@ -75,13 +88,24 @@ const NavBar = () => {
                 Industries
                 <div className="fun_pop2">
                     <div className="button-container">
-                        <div className="title"> Function 2 Title</div>
+                    <div  className="title">
+                        <div> Industries</div>
+                        <FaLongArrowAltRight className="arrow"/>
+                        </div>
                         <div className="column">
+                        <div className="subtitle">Group 1</div>
                             <button>Button 1</button>
                             <button>Button 2</button>
                             <button>Button 3</button>
                         </div>
                         <div className="column">
+                        <div className="subtitle">Group 2</div>
+                            <button>Button 4</button>
+                            <button>Button 5</button>
+                            <button>Button 6</button>
+                        </div>
+                        <div className="column">
+                        <div className="subtitle">Group 3</div>
                             <button>Button 4</button>
                             <button>Button 5</button>
                             <button>Button 6</button>
@@ -93,13 +117,24 @@ const NavBar = () => {
                 Solutions
                 <div className="fun_pop3">
                     <div className="button-container">
-                        <div className="title"> Different product material</div>
+                    <div  className="title">
+                        <div> Solutions</div>
+                        <FaLongArrowAltRight className="arrow"/>
+                        </div>
                         <div className="column">
+                        <div className="subtitle">Group 1</div>
                             <button onClick={handleClickFun3}>Ceramic valves</button>
                             <button>Button 2</button>
                             <button>Button 3</button>
                         </div>
                         <div className="column">
+                        <div className="subtitle">Group 2</div>
+                            <button>Button 4</button>
+                            <button>Button 5</button>
+                            <button>Button 6</button>
+                        </div>
+                        <div className="column">
+                        <div className="subtitle">Group 3</div>
                             <button>Button 4</button>
                             <button>Button 5</button>
                             <button>Button 6</button>
@@ -111,13 +146,24 @@ const NavBar = () => {
                 Resources
                 <div className="fun_pop4">
                     <div className="button-container">
-                        <div className="title"> Function 4 Title</div>
+                    <div  className="title">
+                        <div> Resources</div>
+                        <FaLongArrowAltRight className="arrow"/>
+                        </div>
                         <div className="column">
+                        <div className="subtitle">Group 1</div>
                             <button>Button 1</button>
                             <button>Button 2</button>
                             <button>Button 3</button>
                         </div>
                         <div className="column">
+                        <div className="subtitle">Group 2</div>
+                            <button>Button 4</button>
+                            <button>Button 5</button>
+                            <button>Button 6</button>
+                        </div>
+                        <div className="column">
+                        <div className="subtitle">Group 3</div>
                             <button>Button 4</button>
                             <button>Button 5</button>
                             <button>Button 6</button>
@@ -128,15 +174,26 @@ const NavBar = () => {
 
             <div className="function5">
                 Company
-                <div className="fun_pop4">
+                <div className="fun_pop5">
                     <div className="button-container">
-                        <div className="title"> Function 4 Title</div>
+                    <div  className="title">
+                        <div> Company</div>
+                        <FaLongArrowAltRight className="arrow"/>
+                        </div>
                         <div className="column">
+                        <div className="subtitle">Group 1</div>
                             <button>Button 1</button>
                             <button>Button 2</button>
                             <button>Button 3</button>
                         </div>
                         <div className="column">
+                        <div className="subtitle">Group 2</div>
+                            <button>Button 4</button>
+                            <button>Button 5</button>
+                            <button>Button 6</button>
+                        </div>
+                        <div className="column">
+                        <div className="subtitle">Group 3</div>
                             <button>Button 4</button>
                             <button>Button 5</button>
                             <button>Button 6</button>
@@ -144,6 +201,8 @@ const NavBar = () => {
                     </div>
                 </div>
             </div>
+
+            <div></div>
 
 
             <div className="search" ref={popupRef}>
