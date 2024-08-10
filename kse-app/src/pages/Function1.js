@@ -36,6 +36,7 @@ const Function1 = () => {
             window.cancelAnimationFrame(scrollToTop);
         }
     }
+
     return (
         <div className="mainpage">
             <div className="toolbar">
@@ -167,11 +168,6 @@ const Function1 = () => {
                     </div>
                     <a href="#" className="product_button">Learn More</a>
                 </div>
-
-
-
-
-
 
                 <div id="scroll_top" onClick={scrollToTop}>
                     <span id="arrow-up">&#9650;</span>

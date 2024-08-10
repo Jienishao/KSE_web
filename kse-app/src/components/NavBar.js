@@ -52,7 +52,7 @@ const NavBar = () => {
                 </Link>
             </div>
             <div className="function1">
-                Function 1
+                Services
                 <div className="fun_pop1">
                     <div className="button-container">
                         <div className="title"> Function 1 Title</div>
@@ -72,7 +72,7 @@ const NavBar = () => {
                 </div>
             </div>
             <div className="function2">
-                Function 2
+                Industries
                 <div className="fun_pop2">
                     <div className="button-container">
                         <div className="title"> Function 2 Title</div>
@@ -90,7 +90,7 @@ const NavBar = () => {
                 </div>
             </div>
             <div className="function3">
-                PRODUCT
+                Solutions
                 <div className="fun_pop3">
                     <div className="button-container">
                         <div className="title"> Different product material</div>
@@ -108,7 +108,7 @@ const NavBar = () => {
                 </div>
             </div>
             <div className="function4">
-                Function 4
+                Resources
                 <div className="fun_pop4">
                     <div className="button-container">
                         <div className="title"> Function 4 Title</div>
@@ -126,7 +126,25 @@ const NavBar = () => {
                 </div>
             </div>
 
-            <div></div>
+            <div className="function5">
+                Company
+                <div className="fun_pop4">
+                    <div className="button-container">
+                        <div className="title"> Function 4 Title</div>
+                        <div className="column">
+                            <button>Button 1</button>
+                            <button>Button 2</button>
+                            <button>Button 3</button>
+                        </div>
+                        <div className="column">
+                            <button>Button 4</button>
+                            <button>Button 5</button>
+                            <button>Button 6</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             <div className="search" ref={popupRef}>
                 <div className={`search_bar ${expanded ? 'expanded' : ''}`} onClick={toggleExpand}>
