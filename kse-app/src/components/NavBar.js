@@ -56,17 +56,48 @@ const NavBar = () => {
                 Services
                 <div className="fun_pop1">
                     <div className="button-container">
-                        <div  className="title">
-                        <div> Services</div>
-                        <FaLongArrowAltRight className="arrow"/>
+                        <div className="title">
+                            <div> Services</div>
+                            <FaLongArrowAltRight className="arrow" />
                         </div>
 
                         <div className="column">
-                            <div className="subtitle">Group 1</div>
+                            <div className="subtitle">KSE Group</div>
                             <Link to="/function1">
                                 <button>Electrical Actuators</button>
                             </Link>
                             <button onClick={handleClickFun3}>Ceramic valves</button>
+                            <button>Button 3</button>
+                        </div>
+                        <div className="column">
+                            <div className="subtitle">KSE Flow</div>
+                            <Link to="/linkins">
+                                <button>Link Instruments</button>
+                            </Link>
+                            <button>Control System</button>
+                            <button>Kseve Valve Automation</button>
+                        </div>
+                        <div className="column">
+                            <div className="subtitle">KSE Fluid</div>
+                            <button>Button 4</button>
+                            <button>Button 5</button>
+                            <button>Button 6</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="function2">
+                Industries
+                <div className="fun_pop2">
+                    <div className="button-container">
+                        <div className="title">
+                            <div> Industries</div>
+                            <FaLongArrowAltRight className="arrow" />
+                        </div>
+                        <div className="column">
+                            <div className="subtitle">Group 1</div>
+                            <button>Button 1</button>
+                            <button>Button 2</button>
                             <button>Button 3</button>
                         </div>
                         <div className="column">
@@ -84,57 +115,28 @@ const NavBar = () => {
                     </div>
                 </div>
             </div>
-            <div className="function2">
-                Industries
-                <div className="fun_pop2">
-                    <div className="button-container">
-                    <div  className="title">
-                        <div> Industries</div>
-                        <FaLongArrowAltRight className="arrow"/>
-                        </div>
-                        <div className="column">
-                        <div className="subtitle">Group 1</div>
-                            <button>Button 1</button>
-                            <button>Button 2</button>
-                            <button>Button 3</button>
-                        </div>
-                        <div className="column">
-                        <div className="subtitle">Group 2</div>
-                            <button>Button 4</button>
-                            <button>Button 5</button>
-                            <button>Button 6</button>
-                        </div>
-                        <div className="column">
-                        <div className="subtitle">Group 3</div>
-                            <button>Button 4</button>
-                            <button>Button 5</button>
-                            <button>Button 6</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div className="function3">
                 Solutions
                 <div className="fun_pop3">
                     <div className="button-container">
-                    <div  className="title">
-                        <div> Solutions</div>
-                        <FaLongArrowAltRight className="arrow"/>
+                        <div className="title">
+                            <div> Solutions</div>
+                            <FaLongArrowAltRight className="arrow" />
                         </div>
                         <div className="column">
-                        <div className="subtitle">Group 1</div>
+                            <div className="subtitle">Group 1</div>
                             <button onClick={handleClickFun3}>Ceramic valves</button>
                             <button>Button 2</button>
                             <button>Button 3</button>
                         </div>
                         <div className="column">
-                        <div className="subtitle">Group 2</div>
+                            <div className="subtitle">Group 2</div>
                             <button>Button 4</button>
                             <button>Button 5</button>
                             <button>Button 6</button>
                         </div>
                         <div className="column">
-                        <div className="subtitle">Group 3</div>
+                            <div className="subtitle">Group 3</div>
                             <button>Button 4</button>
                             <button>Button 5</button>
                             <button>Button 6</button>
@@ -146,24 +148,24 @@ const NavBar = () => {
                 Resources
                 <div className="fun_pop4">
                     <div className="button-container">
-                    <div  className="title">
-                        <div> Resources</div>
-                        <FaLongArrowAltRight className="arrow"/>
+                        <div className="title">
+                            <div> Resources</div>
+                            <FaLongArrowAltRight className="arrow" />
                         </div>
                         <div className="column">
-                        <div className="subtitle">Group 1</div>
+                            <div className="subtitle">Group 1</div>
                             <button>Button 1</button>
                             <button>Button 2</button>
                             <button>Button 3</button>
                         </div>
                         <div className="column">
-                        <div className="subtitle">Group 2</div>
+                            <div className="subtitle">Group 2</div>
                             <button>Button 4</button>
                             <button>Button 5</button>
                             <button>Button 6</button>
                         </div>
                         <div className="column">
-                        <div className="subtitle">Group 3</div>
+                            <div className="subtitle">Group 3</div>
                             <button>Button 4</button>
                             <button>Button 5</button>
                             <button>Button 6</button>
@@ -176,24 +178,24 @@ const NavBar = () => {
                 Company
                 <div className="fun_pop5">
                     <div className="button-container">
-                    <div  className="title">
-                        <div> Company</div>
-                        <FaLongArrowAltRight className="arrow"/>
+                        <div className="title">
+                            <div> Company</div>
+                            <FaLongArrowAltRight className="arrow" />
                         </div>
                         <div className="column">
-                        <div className="subtitle">Group 1</div>
+                            <div className="subtitle">Group 1</div>
                             <button>Button 1</button>
                             <button>Button 2</button>
                             <button>Button 3</button>
                         </div>
                         <div className="column">
-                        <div className="subtitle">Group 2</div>
+                            <div className="subtitle">Group 2</div>
                             <button>Button 4</button>
                             <button>Button 5</button>
                             <button>Button 6</button>
                         </div>
                         <div className="column">
-                        <div className="subtitle">Group 3</div>
+                            <div className="subtitle">Group 3</div>
                             <button>Button 4</button>
                             <button>Button 5</button>
                             <button>Button 6</button>

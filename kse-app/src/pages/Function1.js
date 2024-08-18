@@ -54,7 +54,7 @@ const Function1 = () => {
                         alt="Subject picture"
                         className="subject_img"
                     />
-                    <div className="text_box title">ELECTRICAL ACTUATORS</div>
+                    <div className="text_box func1_title">ELECTRICAL ACTUATORS</div>
                     <div className="text_box sub_title">Economical - precise - safe</div>
                 </div>
 

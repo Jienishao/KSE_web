@@ -15,7 +15,7 @@
     border-radius: 5px;
 }
 
-.title {
+.func1_title {
     height: 40px;
     width: 250px;
     top: 170px;
@@ -27,7 +27,7 @@
     height: 20px;
     width: 250px;
     top: 250px;
-    left: 135px;
+    left: 80px;
     font-size: medium;
 }
 

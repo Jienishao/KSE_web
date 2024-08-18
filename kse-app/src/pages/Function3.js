@@ -90,11 +90,11 @@ const Function3 = () => {
             </div>
 
             <div className="front_base">
-            <img id="dynamicImage0" src="" alt="Image" style={{ maxWidth: '100%', height: 'auto' }}/>
+                <img id="dynamicImage0" src="" alt="Image" style={{ maxWidth: '100%', height: 'auto' }} />
             </div>
             <div className="main_title">CERAMIC BALL VALVES - KVC series</div>
             <div className="detail1">KVC series ceramic-lined ball valve, for high corrosion resistance, high wear, high temperature and medium pressure applications, fits in granule medium of high hardness or Medium with erosive soft granule. It is also the only valve suitable for this type of medium.
-Meanwhile, this valve also work in abrasive slurries, or in case of highly corrosive applications.</div>
+                Meanwhile, this valve also work in abrasive slurries, or in case of highly corrosive applications.</div>
 
             <div className="guide_box">
                 <button className="jumpButton" data-target="title2">KVC200</button>
@@ -147,7 +147,7 @@ Meanwhile, this valve also work in abrasive slurries, or in case of highly corro
                         </table>
                     </div>
                     <div className="right_side">
-                        <img id="dynamicImage1" src="" alt="Image" style={{ width: '100%', height: '100%', objectFit: 'contain' }}/>
+                        <img id="dynamicImage1" src="" alt="Image" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                     </div>
                 </div>
             </div>
@@ -190,7 +190,7 @@ Meanwhile, this valve also work in abrasive slurries, or in case of highly corro
                         </table>
                     </div>
                     <div className="right_side">
-                        <img id="dynamicImage2" src="" alt="Image" style={{ width: '100%', height: '100%', objectFit: 'contain' }}/>
+                        <img id="dynamicImage2" src="" alt="Image" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                     </div>
                 </div>
             </div>
@@ -234,7 +234,7 @@ Meanwhile, this valve also work in abrasive slurries, or in case of highly corro
                         </table>
                     </div>
                     <div className="right_side">
-                        <img id="dynamicImage3" src="" alt="Image" style={{ width: '100%', height: '100%', objectFit: 'contain' }}/>
+                        <img id="dynamicImage3" src="" alt="Image" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                     </div>
                 </div>
             </div>
@@ -275,7 +275,7 @@ Meanwhile, this valve also work in abrasive slurries, or in case of highly corro
                         </table>
                     </div>
                     <div className="right_side">
-                        <img id="dynamicImage4" src="" alt="Image" style={{ width: '100%', height: '100%', objectFit: 'contain' }}/>
+                        <img id="dynamicImage4" src="" alt="Image" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                     </div>
                 </div>
             </div>
@@ -315,7 +315,7 @@ Meanwhile, this valve also work in abrasive slurries, or in case of highly corro
                         </table>
                     </div>
                     <div className="right_side">
-                        <img id="dynamicImage5" src="" alt="Image" style={{ width: '100%', height: '100%', objectFit: 'contain' }}/>
+                        <img id="dynamicImage5" src="" alt="Image" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                     </div>
                 </div>
             </div>
@@ -356,7 +356,7 @@ Meanwhile, this valve also work in abrasive slurries, or in case of highly corro
                         </table>
                     </div>
                     <div className="right_side">
-                        <img id="dynamicImage6" src="" alt="Image" style={{ width: '100%', height: '100%', objectFit: 'contain' }}/>
+                        <img id="dynamicImage6" src="" alt="Image" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                     </div>
                 </div>
             </div>
@@ -375,7 +375,7 @@ Meanwhile, this valve also work in abrasive slurries, or in case of highly corro
                                 <li>The main sealing pair and the fixed circular disc valve seat of the ceramic angle valve are made from high-performance structural ceramic materials. it significantly extending the valve's lifespan.</li>
                                 <li>The valve has a simple and compact structure, low operating torque, and is less prone to blockages.</li>
                                 <li>The ceramic valve plug and seat do not experience high-frequency vibrations, effectively avoiding noise issues.</li>
-                                <li>The packing box is designed with a “live load” that maintains a constant load even under significant wear, ensuring long-lasting packing life.</li>
+                                <li>The packing box is designed with a “live load” that maintains a constant load even under significant wear, ensuring long-lasting packing life.</li>
                             </ul>
                         </div>
                         <table className="table">
@@ -395,7 +395,7 @@ Meanwhile, this valve also work in abrasive slurries, or in case of highly corro
                         </table>
                     </div>
                     <div className="right_side">
-                        <img id="dynamicImage7" src="" alt="Image" style={{ width: '100%', height: '100%', objectFit: 'contain' }}/>
+                        <img id="dynamicImage7" src="" alt="Image" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                     </div>
                 </div>
             </div>
